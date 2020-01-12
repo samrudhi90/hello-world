@@ -1,9 +1,9 @@
 pipeline {
     agent any
-        
+       def mvnhome= tool "Maven" 
         tools {
                jdk "java"
-               maven "Maven"
+              # maven "Maven"
              }
 
 
@@ -11,8 +11,9 @@ pipeline {
 
        stage('Build') {
          steps {
-
-              sh 'mvn clean package'
+              sh '${mvnhome}'
+              sh 'java -version'
+              //sh 'mvn clean package'
               
        }
 

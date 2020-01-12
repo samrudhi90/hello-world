@@ -1,6 +1,8 @@
 pipeline {
     agent any
-       def mvnhome= tool "Maven" 
+       environment {
+          mvnhome= tool "Maven" 
+           }
         tools {
                jdk "java"
               // maven "Maven"

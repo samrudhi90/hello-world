@@ -13,7 +13,7 @@ pipeline {
 
        stage('Build') {
          steps {
-              sh '${mvnhome}'
+              sh 'echo ${mvnhome}'
               sh 'java -version'
               //sh 'mvn clean package'
               

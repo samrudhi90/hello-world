@@ -3,7 +3,7 @@ pipeline {
        def mvnhome= tool "Maven" 
         tools {
                jdk "java"
-              # maven "Maven"
+              // maven "Maven"
              }
 
 

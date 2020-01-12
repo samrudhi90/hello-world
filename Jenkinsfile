@@ -1,16 +1,16 @@
-pipeline{
+pipeline {
     agent any
         
-        tools{
+        tools {
                jdk "Java-1.8"
                maven "Maven-3.6.3"
              }
 
 
-    stages{
+    stages {
 
-       stage('test')
-         steps{
+       stage('test'){
+         steps {
 
               sh 'java -version'
               sh 'mvn -version'

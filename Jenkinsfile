@@ -30,12 +30,19 @@ pipeline {
               sh 'echo ${mvnhome}'
               sh 'java -version'
               echo "Name:${name}"
-              echo "address:${address}"
+              returnname()
               echo "Trying: ${params.door_choice}"
               echo "We can dance: ${params.Can_Dance}"
               echo "The DJ says: ${params.StrangePARAM}"
               
        }
+
+}
+
+def returnname(){
+  def name1= "Sammit"
+  echo "Name1: ${name1}"
+
 
 }
 

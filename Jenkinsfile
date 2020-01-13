@@ -11,6 +11,7 @@ pipeline {
           defaultValue: 'Dance',
           description: 'Do the funky chicken')
        }
+       def name = "Samrudhi"
        environment {
           mvnhome= tool "Maven" 
            }
@@ -26,6 +27,7 @@ pipeline {
          steps {
               sh 'echo ${mvnhome}'
               sh 'java -version'
+              echo "Name:${name}"
               echo "Trying: ${params.door_choice}"
               echo "We can dance: ${params.Can_Dance}"
               echo "The DJ says: ${params.StrangePARAM}"

@@ -27,7 +27,7 @@ pipeline {
               sh 'echo ${mvnhome}'
               sh 'java -version'
               echo "Trying: ${params.door_choice}"
-              echo "We can dance: ${params.CAN_Dance}"
+              echo "We can dance: ${params.Can_Dance}"
               echo "The DJ says: ${params.StrangePARAM}"
               
        }

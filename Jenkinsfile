@@ -39,6 +39,7 @@ pipeline {
 
 }
 }
+}
 def returnname(){
   def name1= "Sammit"
   echo "Name1: ${name1}"
@@ -48,4 +49,4 @@ def returnname(){
 
 
 
-}
+

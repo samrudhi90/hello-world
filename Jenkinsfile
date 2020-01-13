@@ -25,7 +25,7 @@ pipeline {
     stages {
 
        stage('Build') {
-          def address= "Bangalore"
+         // def address= "Bangalore"
          steps {
               sh 'echo ${mvnhome}'
               sh 'java -version'
